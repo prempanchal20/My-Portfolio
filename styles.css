@@ -15,6 +15,27 @@ body {
     padding-top: 8%;
 }
 
+/* <noscript> message */
+noscript {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    z-index: 9999;
+}
+
+noscript p {
+    max-width: 80%;
+    text-align: center;
+}
+
 /* Loader CSS */
 .loader {
     position: fixed;
@@ -32,7 +53,7 @@ body {
 .loader::before {
     content: "";
     border: 4px solid #f3f3f3;
-    border-top: 4px solid #ff004f;
+    border-top: 4px solid #C60036;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -84,7 +105,7 @@ body {
 }
 
 .portfolio-navbar-content ul li a:hover {
-    color: #ff004f;
+    color: #C60036;
 }
 
 .portfolio-navbar-content ul li a:after {
@@ -94,7 +115,7 @@ body {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: #ff004f;
+    background-color: #C60036;
     transform: scaleX(0);
     transform-origin: left center;
     transition: transform 0.3s ease;
@@ -109,7 +130,7 @@ body {
 }
 
 .portfolio-navbar-title p::first-letter {
-    color: #ff004f;
+    color: #C60036;
     font-size: 40px;
 }
 
@@ -133,7 +154,7 @@ body {
 
 .portfolio-red-text {
     font-size: 30px;
-    color: #ff004f;
+    color: #C60036;
 }
 
 .portfolio-home-left {
@@ -253,7 +274,7 @@ body {
 .portfolio-about-section h1 {
     font-size: 40px;
     font-weight: 600;
-    color: #ff004f;
+    color: #C60036;
 }
 
 .portfolio-about-section p {
@@ -286,12 +307,12 @@ body {
 
 .data-analytics,
 .web-developement {
-    color: #ff004f;
+    color: #C60036;
 }
 
 .sub-title {
-    margin-top: 5px;
-    color: #FFFFFF;
+    display: block;
+    margin-top: 20px;
 }
 
 .experience-details {
@@ -312,7 +333,7 @@ body {
 }
 
 .portfolio-about-content li:hover {
-    color: #ff004f;
+    color: #C60036;
 }
 
 .portfolio-about-content li span::after {
@@ -322,7 +343,7 @@ body {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: #ff004f;
+    background-color: #C60036;
     transform: scaleX(0);
     transform-origin: left center;
     transition: transform 0.3s ease;
@@ -349,7 +370,7 @@ body {
 }
 
 .portfolio-about-content .active-link {
-    color: #ff004f;
+    color: #C60036;
 }
 
 .portfolio-about-content .active-link::after {
@@ -368,7 +389,7 @@ body {
 .portfolio-services-section h1 {
     font-size: 40px;
     font-weight: 600;
-    color: #ff004f;
+    color: #C60036;
 }
 
 .portfolio-services-section {
@@ -426,7 +447,7 @@ body {
 }
 
 .portfolio-link:hover {
-    color: #ff004f;
+    color: #C60036;
 }
 
 .portfolio-services-list a:hover {
@@ -434,7 +455,7 @@ body {
 }
 
 .portfolio-services-list div:hover {
-    background-color: #ff004f;
+    background-color: #C60036;
     transform: translateY(-10px);
 }
 
@@ -442,7 +463,7 @@ body {
 .portfolio-contact-section h1 {
     font-size: 40px;
     font-weight: 600;
-    color: #ff004f;
+    color: #C60036;
 }
 
 .portfolio-contact-section {
@@ -452,7 +473,7 @@ body {
 .contact-left h1 {
     font-size: 40px;
     font-weight: 600;
-    color: #ff004f;
+    color: #C60036;
 }
 
 .social-media-icons {
@@ -491,7 +512,7 @@ body {
 
 .contact-left p i {
     margin-right: 15px;
-    color: #ff004f;
+    color: #C60036;
     font-size: 25px;
 }
 
@@ -514,7 +535,7 @@ body {
 
 .btn.cv-btn,
 .submit-btn {
-    background-color: #ff004f;
+    background-color: #C60036;
     border-radius: 5px;
     text-decoration: none;
     color: white;
@@ -566,7 +587,7 @@ form textarea {
 }
 
 .portfolio-footer-content a:hover {
-    color: #ff004f;
+    color: #C60036;
     position: relative;
 }
 
@@ -577,7 +598,7 @@ form textarea {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: #ff004f;
+    background-color: #C60036;
     transform: scaleX(0);
     transform-origin: left center;
     transition: transform 0.3s ease;

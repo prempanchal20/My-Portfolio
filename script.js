@@ -46,7 +46,7 @@ function openTabs(tabname) {
 
   let clickedTab = document.querySelector(`[onclick="openTabs('${tabname}')"]`);
   clickedTab.classList.add("active-link");
-  clickedTab.style.color = "#ff004f";
+  clickedTab.style.color = "#C60036";
 
   document.getElementById(tabname).style.display = "block";
 
@@ -133,10 +133,7 @@ function submitForm() {
 
   if (form.checkValidity()) {
     form.reset();
-    showAlert(
-      "Success!",
-      "Your response has been saved. I'll connect with you shortly."
-    );
+    showAlert("Success!", "Your response has been saved.");
   } else {
     showAlert("Validation Error", "Please fill in all required fields.");
   }
@@ -146,7 +143,7 @@ function showAlert(title, message) {
   Swal.fire({
     title: title,
     text: message,
-    confirmButtonColor: "#ff004f",
+    confirmButtonColor: "#C60036",
     confirmButtonText: "OK",
   });
 }
