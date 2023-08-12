@@ -475,6 +475,11 @@ body {
     width: 35%;
 }
 
+.contact-left a {
+    text-decoration: none;
+    color: white;
+}
+
 .contact-right {
     width: 65%;
     padding-left: 20px;
@@ -772,7 +777,7 @@ form textarea {
     }
 
     .portfolio-navbar-content ul {
-        background: #ff004f;
+        background: #1a1a1a;
         position: fixed;
         top: 0;
         right: -200px;
@@ -837,7 +842,7 @@ form textarea {
     }
 
     .portfolio-navbar-content ul {
-        background: #ff004f;
+        background: #1a1a1a;
         position: fixed;
         top: 0;
         right: -200px;
@@ -918,7 +923,7 @@ form textarea {
     }
 
     .portfolio-navbar-content ul {
-        background: #ff004f;
+        background: #1a1a1a;
         position: fixed;
         top: 0;
         right: -200px;
@@ -1021,7 +1026,7 @@ form textarea {
     }
 
     .portfolio-navbar-content ul {
-        background: #ff004f;
+        background: #1a1a1a;
         position: fixed;
         top: 0;
         right: -200px;
