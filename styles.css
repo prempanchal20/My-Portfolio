@@ -12,7 +12,7 @@ body {
 }
 
 .portfolio-content-container {
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 /* Loader CSS */
@@ -32,7 +32,7 @@ body {
 .loader::before {
     content: "";
     border: 4px solid #f3f3f3;
-    border-top: 4px solid #d7003c;
+    border-top: 4px solid #ff004f;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -113,12 +113,17 @@ body {
     font-size: 40px;
 }
 
+.portfolio-navbar-content .fas {
+    display: none;
+}
+
 /* Home Section CSS */
 .portfolio-home-section {
     margin: 5% 10%;
     display: flex;
     align-items: center;
     animation: fadeInUp 2s ease-out;
+    margin-top: 15%;
 }
 
 .portfolio-home-section p,
@@ -133,38 +138,47 @@ body {
 
 .portfolio-home-left {
     flex: 1;
+    float: left;
+}
+
+.greetings-clock {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    display: flex;
+
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
 }
 
 .portfolio-home-right {
     display: flex;
+    align-items: flex-end;
     font-size: 30px;
-    width: 30%;
     margin-bottom: 10px;
-    justify-content: flex-end;
     padding: 10px;
+    float: right;
 }
 
 .portfolio-home-right i {
     margin-right: 10px;
-    margin: 0 5px;
-}
-
-#clock {
-    text-align: right;
-    padding: 10px;
 }
 
 #txt {
     font-size: 24px;
-    font-weight: bold;
 }
 
 .portfolio-home-left {
     width: 70%;
+    flex: 1;
 }
 
 .portfolio-home-section {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .typing-animation {
@@ -176,13 +190,31 @@ body {
 }
 
 .tech-skills {
-    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+
+
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .tech-skills-icons {
-    font-size: 32px;
+    font-size: 50px;
     display: flex;
-    margin-top: 3%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tech-skills-heading {
+    margin-right: 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .tech-skills-icons i {
@@ -204,7 +236,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #fff;
+    background-color: white;
     padding: 8px;
     border-radius: 50%;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
@@ -214,7 +246,6 @@ body {
 
 .scroll-to-top i {
     font-size: 24px;
-    color: #ff004f;
     transition: color 0.3s;
 }
 
@@ -345,14 +376,28 @@ body {
 }
 
 .portfolio-services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.portfolio-services-list div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #333333;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    margin-right: 20px;
+    flex: 1;
 }
 
 .portfolio-services-list p {
     margin-top: 30px;
+    line-height: 1.5;
 }
 
 .portfolio-services-list h2 {
@@ -377,6 +422,7 @@ body {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    margin-top: auto;
 }
 
 .portfolio-link:hover {
@@ -385,15 +431,6 @@ body {
 
 .portfolio-services-list a:hover {
     color: white;
-}
-
-.portfolio-services-list div {
-    background-color: #333333;
-    padding: 40px;
-    font-size: 18px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
 }
 
 .portfolio-services-list div:hover {
@@ -409,117 +446,92 @@ body {
 }
 
 .portfolio-contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 10%;
 }
 
-.portfolio-contact-details {
+.contact-left h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ff004f;
+}
+
+.social-media-icons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8%;
+}
+
+.contact-details {
     display: flex;
     flex-direction: row;
 }
 
-.icon-text {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-top: 30px;
-}
-
-.icon-text a {
-    color: white;
-    display: flex;
-    text-decoration: none;
-}
-
-.portfolio-contact-right {
-    width: 65%;
-}
-
-.portfolio-contact-left {
+.contact-left {
     width: 35%;
 }
 
-.icon-text i {
-    margin-right: 10px;
-    color: #ff004f;
+.contact-right {
+    width: 65%;
+    padding-left: 20px;
 }
 
-.contact-info {
-    margin-top: 10%;
-}
-
-.contact-text p {
-    margin: 0;
-}
-
-.portfolio-contact-social-media-icon i {
-    margin-right: 10px;
-    transition: color 0.3s;
-    background-color: transparent;
-}
-
-.portfolio-contact-social-media-icon a {
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 5px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.portfolio-contact-social-media-icon a:hover {
-    transform: scale(1.2);
-}
-
-.github-icon {
-    color: white;
-}
-
-.linkedin-icon {
-    color: #007bff;
-}
-
-.portfolio-contact-social-media-icon {
+.contact-left p {
     margin-top: 30px;
 }
 
-.cv-btn {
-    display: inline-block;
-    background: #ff004f;
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 10px;
-    margin-top: 10%;
-    border: none;
-    font-size: 15px;
+.contact-left p i {
+    margin-right: 15px;
+    color: #ff004f;
+    font-size: 25px;
 }
 
-.submit-btn {
+.social-media-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
     display: inline-block;
-    background: #ff004f;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.fa-linkedin-in:hover {
+    color: #0072b1;
+}
+
+.btn.cv-btn,
+.submit-btn {
+    background-color: #ff004f;
+    border-radius: 5px;
     text-decoration: none;
     color: white;
-    padding: 10px 30px;
-    border-radius: 10px;
-    margin-top: 15px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
 }
 
-.cv-btn:hover,
+.btn.cv-btn:hover,
 .submit-btn:hover {
-    background: #d7003c;
+    background-color: #c60036;
 }
 
-.portfolio-contact-form {
-    display: flex;
+.portfolio-contact-right form {
+    width: 100%;
 }
 
 form {
     margin-top: 10%;
-    margin-left: 32px;
 }
 
 form input,
@@ -527,7 +539,7 @@ form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background: #333333;
+    background-color: #333333;
     padding: 15px;
     margin: 15px 0;
     color: white;
@@ -571,33 +583,567 @@ form textarea {
 }
 
 /* Media Queries */
-@media screen and (min-width: 1024px) {
-    .portfolio-content-container {
-        padding-top: 5%;
+@media only screen and (min-width: 1011px) and (max-width: 1245px) {
+
+    .portfolio-home-right i,
+    .portfolio-home-right,
+    #txt {
+        font-size: 26px;
+    }
+
+    .portfolio-home-left {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .greetings-clock {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 25%;
+    }
+
+    .portfolio-services-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-card {
+        margin-top: 20px;
+    }
+
+    #clock {
+        position: relative;
+        bottom: 2px;
     }
 }
 
-@media screen and (max-width: 1023px) {
-    .portfolio-content-container {
-        padding-top: 10%;
+@media only screen and (min-width: 930px) and (max-width: 1011px) {
+    .portfolio-home-left {
+        margin-top: 30px;
+        text-align: center;
+        margin-right: 19%;
     }
 
-    .portfolio-navbar-title p {
-        font-size: 20px;
+    #clock {
+        position: relative;
+        bottom: 4px;
+    }
+
+    .portfolio-services-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-card {
+        margin-top: 20px;
+    }
+
+    form {
+        margin-top: 18%;
+    }
+
+    .portfolio-contact-left {
+        width: 65%;
+        padding-top: 7px;
+        margin-left: 80px;
+    }
+
+    .portfolio-contact-right {
+        width: 35%;
+    }
+
+    .portfolio-about-section ul {
+        margin-top: 6%;
+    }
+
+    .contact-right {
+        width: 60%;
+    }
+
+    .contact-left {
+        width: 40%;
+    }
+
+    .greetings-clock {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 25%;
     }
 }
 
-@media screen and (max-width: 767px) {
-    .portfolio-navbar {
-        padding: 1% 5%;
+@media only screen and (min-width: 821px) and (max-width: 930px) {
+
+    .portfolio-contact-left,
+    .portfolio-contact-right {
+        margin: 30px 0;
     }
 
-    .portfolio-home-section h1,
-    .portfolio-home-section p {
-        font-size: 24px;
+    .portfolio-about-section ul {
+        margin-top: 6%;
+    }
+
+    .portfolio-contact-left {
+        width: 35%;
+    }
+
+    .portfolio-contact-right {
+        width: 65%;
+        padding-top: 7px;
+        margin-left: 80px;
+    }
+
+    .portfolio-about-section ul {
+        margin-top: 6%;
+    }
+
+    .portfolio-contact-section h1 {
+        font-size: 38px;
+    }
+
+    .portfolio-services-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-right {
+        padding: 0;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-card {
+        margin-top: 20px;
+    }
+
+    .portfolio-home-left {
+        margin-top: 60px;
+        text-align: center;
     }
 
     .portfolio-services-list div {
-        padding: 20px;
+        margin-right: 0;
+    }
+
+    .greetings-clock {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 16%;
+    }
+}
+
+@media only screen and (min-width: 710px) and (max-width: 821px) {
+    .portfolio-home-left {
+        margin-top: 60px;
+        text-align: center;
+        margin-right: 3%;
+    }
+
+    #clock {
+        position: relative;
+        bottom: 4px;
+    }
+
+    .greetings-clock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12%;
+    }
+
+    .portfolio-navbar-content .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    .portfolio-navbar-content ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    .portfolio-navbar-content ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    .portfolio-navbar-content ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-right {
+        padding: 0;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-services-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-card {
+        margin-top: 20px;
+    }
+
+    .tech-skills-heading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio-services-list div {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 710px) {
+    .portfolio-navbar-content .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    .portfolio-navbar-content ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    .portfolio-navbar-content ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    .portfolio-navbar-content ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .portfolio-home-left {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .greetings-clock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 6%;
+    }
+
+    .portfolio-about-section ul {
+        margin-top: 8%;
+    }
+
+    .portfolio-services-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-card {
+        margin-top: 20px;
+    }
+
+    .portfolio-services-list div {
+        margin-right: 0;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-right {
+        padding: 0;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .tech-skills-heading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    .portfolio-navbar-content .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    .portfolio-navbar-content ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    .portfolio-navbar-content ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    .portfolio-navbar-content ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .portfolio-home-left {
+        margin-top: 35%;
+        text-align: center;
+    }
+
+    .portfolio-home-right,
+    #clock,
+    #txt {
+        font-size: 18px;
+    }
+
+    .greetings-clock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8%;
+
+    }
+
+    .portfolio-about-section ul {
+        margin-top: 8%;
+    }
+
+    .portfolio-services-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-card {
+        margin-top: 20px;
+    }
+
+    .portfolio-services-list div {
+        margin-right: 0;
+        margin-top: 30px;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-right {
+        padding: 0;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #clock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 4px;
+    }
+
+    .portfolio-home-section h1,
+    .portfolio-red-text,
+    .typing-animation {
+        font-size: 20px;
+    }
+
+    .tech-skills-heading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .portfolio-navbar-content .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    .portfolio-navbar-content ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    .portfolio-navbar-content ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    .portfolio-navbar-content ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .portfolio-home-left {
+        margin-top: 35%;
+        text-align: center;
+    }
+
+    .portfolio-home-right,
+    #clock,
+    #txt {
+        font-size: 18px;
+    }
+
+    .greetings-clock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+    }
+
+    .portfolio-about-section ul {
+        margin-top: 8%;
+        font-size: 18px;
+    }
+
+    .sub-title {
+        font-size: 15px;
+        line-height: 2.6;
+        margin: 6px;
+    }
+
+    .tech-skills-icons i {
+        margin-top: 15px;
+    }
+
+    .data-analytics,
+    .web-developement {
+        font-size: 25px;
+    }
+
+    .portfolio-services-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-card {
+        margin-top: 20px;
+    }
+
+    .portfolio-services-list div {
+        margin-right: 0;
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-right {
+        padding: 0;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #clock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 4px;
+    }
+
+    .portfolio-home-section h1,
+    .typing-animation {
+        font-size: 17px;
+    }
+
+    .tech-skills-heading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio-content-container {
+        padding-top: 50%;
+    }
+
+    .portfolio-content-container p {
+        font-size: 16px;
+    }
+
+    .contact-left p i {
+        font-size: 15px;
+    }
+
+    .social-media-icons a {
+        font-size: 25px;
     }
 }

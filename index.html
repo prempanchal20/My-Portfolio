@@ -21,12 +21,14 @@
       <h1 class="portfolio-navbar-title">
         <p>Prem</p>
       </h1>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+      <ul id="sidemenu">
+        <li><a href="#" onclick="closeSidebar()">Home</a></li>
+        <li><a href="#about" onclick="closeSidebar()">About</a></li>
+        <li><a href="#services" onclick="closeSidebar()">Services</a></li>
+        <li><a href="#contact" onclick="closeSidebar()">Contact Me</a></li>
+        <i class="fas fa-times" onclick="closeMenu()"></i>
       </ul>
+      <i class="fas fa-bars" onclick="openMenu()"></i>
     </nav>
   </header>
 
@@ -34,38 +36,16 @@
   <section class="portfolio-home-section" id="home">
     <div class="portfolio-home-left">
       <h1>Hi, I'm <span class="portfolio-red-text">Prem Panchal</span></h1>
-      <p><span class="typing-animation">Software Developer and Data Analytics</span></p>
-      <div class="tech-skills">
-        <p>Skills</p>
-        <div class="tech-skills-icons">
-          <i class="fa-brands fa-html5" style="color: #e34c26;"></i>
-          <i class="fa-brands fa-css3-alt" style="color: #004de9;"></i>
-          <i class="fa-brands fa-square-js" style="color: #f7df1e;"></i>
-          <i class="fa-brands fa-vuejs" style="color: #42b883;"></i>
-          <i class="fa-brands fa-react" style="color: #7cc5d9;"></i>
-          <svg xmlns="https://icons8.com/icon/13441/python" width="40" height="40" viewBox="0 0 64 64">
-            <image width="55" height="55" href="Images/python.png">
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 64 64">
-            <image width="64" height="64" href="Images/typescript-icon.png" />
-          </svg>
-        </div>
+      <p><span class="typing-animation">Software Developer and Data Analyst</span></p>
+    </div>
+
+    <div class="greetings-clock">
+      <div class="portfolio-home-right"></div>
+      <div id="clock">
+        <span id="txt"></span>
       </div>
     </div>
 
-    <!-- Display Greeting Message based on real time -->
-    <div class="portfolio-home-right">
-      <i id="morning-icon" class="fa-solid fa-sun" style="color: #fdb813;"></i></span>
-      <i id="afternoon-icon" class="fa-solid fa-sun" style="color: #fdb813;"></i></span>
-      <i id="evening-icon" class="fa-solid fa-moon" style="color: #f6f1d5;"></i></span>
-    </div>
-
-    <!-- Display Real Time -->
-    <div id="clock">
-      <span id="txt"></span>
-    </div>
-
-    <!-- Up Arrow Icon -->
     <a href="#" class="scroll-to-top">
       <i class="fa-solid fa-angle-up" style="color: #ff004f;"></i>
     </a>
@@ -140,8 +120,10 @@
           <li>
             <span class="web-developement">Softvan PVT LTD</span><span class="sub-title"> - Graduate Trainee
               Engineer</span>
-            <div class="experience-details">During this internship, I did one hands-on project with the help of computer
-              vision and the Django framework in Python. The project name was Vehicle Automated Security System, further
+            <div class="experience-details">During this internship, I did one hands-on project with the help of
+              computer
+              vision and the Django framework in Python. The project name was Vehicle Automated Security System,
+              further
               information about that project is provided in the project section
             </div>
           </li>
@@ -163,6 +145,24 @@
       </div>
   </section>
 
+  <!-- Tech Skills -->
+  <div class="tech-skills">
+    <div class="tech-skills-icons">
+      <span class="tech-skills-heading">Technical Skills: </span>
+      <i class="fa-brands fa-html5" style="color: #e34c26;"></i>
+      <i class="fa-brands fa-css3-alt" style="color: #004de9;"></i>
+      <i class="fa-brands fa-square-js" style="color: #f7df1e;"></i>
+      <i class="fa-brands fa-vuejs" style="color: #42b883;"></i>
+      <i class="fa-brands fa-react" style="color: #7cc5d9;"></i>
+      <svg xmlns="https://icons8.com/icon/13441/python" width="50" height="50" viewBox="0 0 100 100">
+        <image width="100" height="100" href="Images/python.png">
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 100 100">
+        <image width="100" height="100" href="Images/typescript-icon.png" />
+      </svg>
+    </div>
+  </div>
+
   <!-- Services Section -->
   <section class="portfolio-services-section" id="services">
     <div class="portfolio-content-container">
@@ -179,7 +179,7 @@
           </p>
           <a href="https://github.com/prempanchal20" class="portfolio-link">Learn More</a>
         </div>
-        <div>
+        <div class="portfolio-card">
           <h2>
             <i class="fa-solid fa-chart-line"></i>Data Analyst
           </h2>
@@ -198,45 +198,26 @@
   </section>
 
   <!-- Contact Me Section -->
-  <section class="portfolio-contact-section" id="contact">
-    <div class="portfolio-content-container">
-      <div class="portfolio-contact-details">
-        <div class="portfolio-contact-form">
-          <div class="portfolio-contact-left">
-            <h1>Contact Me</h1>
-            <div class="contact-info">
-              <div class="icon-text">
-                <a href="mailto:prempanchal155@gmail.com">
-                  <i class="fa-regular fa-envelope"></i>
-                  <p>prempanchal155@gmail.com</p>
-                </a>
-              </div>
-              <div class="icon-text">
-                <a href="tel:+919924620699">
-                  <i class="fa-solid fa-phone"></i>
-                  <p>+91 9924620699</p>
-                </a>
-              </div>
-            </div>
-            <div class="portfolio-contact-social-media-icon">
-              <a href="https://github.com/prempanchal20">
-                <i style="font-size:24px" class="fa github-icon">&#xf09b;</i>
-                <a href="https://www.linkedin.com/in/prempanchal206/">
-                  <i style="font-size:24px" class="fa linkedin-icon">&#xf0e1;</i>
-                </a>
-            </div>
-
-            <a href="Images/CV_Prem Panchal.pdf" download class="cv-btn">Download CV</a>
+  <section id="contact" class="portfolio-contact-section">
+    <div class="contact-container">
+      <div class="contact-details">
+        <div class="contact-left">
+          <h1>Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>prempanchal155@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>+91 9924620699</p>
+          <div class="social-media-icons">
+            <a href="https://www.linkedin.com/in/prempanchal206/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/prempanchal20"><i class="fa-brands fa-github"></i></a>
           </div>
-          <div class="portfolio-contact-right">
-            <form name="submit-to-google-sheet">
-              Name: <input type="text" name="Name" placeholder="Enter Your Name..." required />
-              Email: <input type="email" name="Email" placeholder="Enter Your Email ID..." required />
-              Enter Your Message <textarea name="Message" rows="6" placeholder="Enter Your Message Here..."
-                required></textarea>
-              <button type="submit" class="submit-btn" onclick="showAlert()">Submit</button>
-            </form>
-          </div>
+          <a href="Images/CV_Prem Panchal.pdf" download class="btn cv-btn">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet" id="submit-form" method="POST">
+            Name:<input type="text" name="Name" placeholder="Enter Your Name" required>
+            Email:<input type="email" name="Email" placeholder="Enter Your Email" required>
+            Message:<textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+            <button type="submit" class="btn submit-btn">Submit</button>
+          </form>
         </div>
       </div>
     </div>
@@ -245,7 +226,7 @@
   <!-- Footer Section-->
   <footer class="portfolio-footer">
     <div class="portfolio-footer-content">
-      <a href="http://">
+      <a href="https://github.com/prempanchal20/My-Portfolio">
         Copyright &#169; Prem Panchal
       </a>
     </div>
