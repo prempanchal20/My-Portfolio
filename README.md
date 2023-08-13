@@ -118,19 +118,19 @@ You can access my portfolio website at [https://prempanchal-portfolio.netlify.ap
   
 ## Project Screenshots
 
-![Home Section](Portfolio\Images\readme-screenshot\home-section)
+![Home Section](![home-section](https://github.com/prempanchal20/My-Portfolio/assets/125369125/cb489ae3-9fae-4fcc-afa9-4dd720faf80f))
 
-![About Section](Portfolio\Images\readme-screenshot\about-section)
+![About Section](![about-section](https://github.com/prempanchal20/My-Portfolio/assets/125369125/cb90a567-6d85-40ed-b982-5d8fec1a5a28))
 
-![Skills Section](Portfolio\Images\readme-screenshot\about-section)
+![About Section](![about-section](https://github.com/prempanchal20/My-Portfolio/assets/125369125/cb90a567-6d85-40ed-b982-5d8fec1a5a28))
 
-![Experience Section](Portfolio\Images\readme-screenshot\experience)
+![Experience Section](![experience](https://github.com/prempanchal20/My-Portfolio/assets/125369125/c35569ed-6593-40b7-9e7b-5c3bd64bc450))
 
-![Education Section](Portfolio\Images\readme-screenshot\education)
+![Education Section](![education](https://github.com/prempanchal20/My-Portfolio/assets/125369125/0fa6536c-e847-4b30-b9a7-1ee7bcc89ccf))
 
-![Services Section](Portfolio\Images\readme-screenshot\service-section)
+![Services Section](![service-section](https://github.com/prempanchal20/My-Portfolio/assets/125369125/06b5d017-2956-4427-92c7-c512898e0628))
 
-![Contact Me Section](Portfolio\Images\readme-screenshot\contact-section)
+![Contact Me Section](![contact-section](https://github.com/prempanchal20/My-Portfolio/assets/125369125/f7f178ea-29b5-454f-9384-afca9661b818))
 
 ## Getting Started
 
