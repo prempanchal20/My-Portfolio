@@ -120,9 +120,9 @@ You can access my portfolio website at [https://prempanchal-portfolio.netlify.ap
 
 ![Home Section](https://github.com/prempanchal20/My-Portfolio/blob/main/Images/readme-screenshot/home-section.png)
 
-![About Section](![about-section](https://github.com/prempanchal20/My-Portfolio/assets/125369125/cb90a567-6d85-40ed-b982-5d8fec1a5a28))
+![About Section](https://github.com/prempanchal20/My-Portfolio/blob/main/Images/readme-screenshot/about-section.png)
 
-![Skills Section](![about-section](https://github.com/prempanchal20/My-Portfolio/assets/125369125/cb90a567-6d85-40ed-b982-5d8fec1a5a28))
+![Skills Section](https://github.com/prempanchal20/My-Portfolio/blob/main/Images/readme-screenshot/about-section.png)
 
 ![Experience Section](https://github.com/prempanchal20/My-Portfolio/blob/main/Images/readme-screenshot/experience.png)
 
