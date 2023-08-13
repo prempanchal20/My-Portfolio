@@ -147,6 +147,10 @@ noscript p {
     margin-top: 15%;
 }
 
+.portfolio-home-right img {
+    margin-right: 10px;
+}
+
 .portfolio-home-section p,
 .portfolio-home-section h1 {
     font-size: 30px;
@@ -383,6 +387,20 @@ noscript p {
     transform: scaleX(1);
     transform-origin: left center;
     transition: transform 0.3s ease;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.tab-contents {
+    animation: fade-in 1s ease-in-out;
 }
 
 /* Services Section CSS */
@@ -628,6 +646,10 @@ form textarea {
         align-items: center;
         justify-content: center;
         margin-right: 25%;
+    }
+
+    .portfolio-home-right {
+        margin-right: 10px;
     }
 
     .portfolio-services-list {
@@ -1075,9 +1097,154 @@ form textarea {
     }
 
     .portfolio-home-right,
-    #clock,
-    #txt {
+    #clock {
         font-size: 18px;
+    }
+
+    .greetings-clock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+        flex-direction: column;
+    }
+
+    .portfolio-about-section ul {
+        margin-top: 8%;
+        font-size: 18px;
+    }
+
+    .sub-title {
+        font-size: 17px;
+        line-height: 2.6;
+        margin: 6px;
+    }
+
+    .tech-skills-icons i {
+        margin-top: 15px;
+    }
+
+    .data-analytics,
+    .web-developement {
+        font-size: 25px;
+    }
+
+    .portfolio-services-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-card {
+        margin-top: 20px;
+    }
+
+    .portfolio-services-list div {
+        margin-right: 0;
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-right {
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #clock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 4px;
+    }
+
+    .portfolio-home-section h1,
+    .typing-animation {
+        font-size: 17px;
+    }
+
+    .tech-skills-heading {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio-content-container {
+        padding-top: 50%;
+    }
+
+    .portfolio-content-container p {
+        font-size: 16px;
+    }
+
+    .contact-left p i {
+        font-size: 15px;
+    }
+
+    .social-media-icons a {
+        font-size: 25px;
+    }
+}
+
+/* Media Query For Samsung Fold */
+@media only screen and (max-width: 300px) {
+
+    .portfolio-navbar-content .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    .portfolio-home-section p {
+        margin-top: 31px;
+        width: 94%;
+    }
+
+    .portfolio-navbar-content ul {
+        background: #1a1a1a;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    .portfolio-navbar-content ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    .portfolio-navbar-content ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .portfolio-home-left {
+        margin-top: 62%;
+        text-align: center;
+    }
+
+    .portfolio-home-right,
+    #clock {
+        font-size: 15px;
+    }
+
+    #txt {
+        font-size: 13px;
     }
 
     .greetings-clock {
@@ -1095,7 +1262,12 @@ form textarea {
     .sub-title {
         font-size: 15px;
         line-height: 2.6;
-        margin: 6px;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .experience-details {
+        font-size: 16px;
     }
 
     .tech-skills-icons i {
@@ -1146,6 +1318,10 @@ form textarea {
         bottom: 4px;
     }
 
+    .typing-animation {
+        white-space: pre-line;
+    }
+
     .portfolio-home-section h1,
     .typing-animation {
         font-size: 17px;
@@ -1162,14 +1338,54 @@ form textarea {
     }
 
     .portfolio-content-container p {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .portfolio-services-list h2 {
+        font-size: 26px;
     }
 
     .contact-left p i {
         font-size: 15px;
     }
 
+    .contact-left a {
+        font-size: 14px;
+    }
+
     .social-media-icons a {
         font-size: 25px;
+    }
+
+    .portfolio-red-text {
+        font-size: 25px;
+    }
+
+    .portfolio-about-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .portfolio-about-content .tab-links {
+        cursor: pointer;
+        padding: 10px 0;
+    }
+
+    .tab-contents {
+        display: none;
+    }
+
+    .active-tab {
+        display: block;
+    }
+
+    .portfolio-about-content li {
+        margin-top: 30%;
+    }
+
+    .web-developement,
+    .data-analytics {
+        font-size: 18px;
     }
 }
